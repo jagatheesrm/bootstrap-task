@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap web page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="custom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -39,19 +43,44 @@
         </nav>
     </header>
     <!-- hero area start -->
-    <div class="container gx-3">
+    <div class="container-fluid gx-3 " id="hero-section">
         <div class="row gx-5">
-            <div class="col-6" data-wow-duration="2s" data-wow-delay="1s">
-                <img class="img-fluid" src="./img/header.jpg" alt="" />
+            <div class="col-lg-6 col-sm-12" data-wow-duration="2s" data-wow-delay="1s">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/header-removebg-preview.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/iphone-2470380_1280.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/header-removebg-preview.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
             </div>
             <div class="col-6">
                 <div class="row">
                     <div class="col">
                         <div class="">
-                            <h1>Moto All solution Head</h1>
-                            <p>Nulla aliquet, erat a egestas lacinia, leo libero dapibus nisl, quis pulvinar dolor justo
+                            <h1 class="display-5 ">Moto All solution Head</h1>
+                            <p class="lead">Nulla aliquet, erat a egestas lacinia, leo libero dapibus nisl, quis pulvinar dolor justo
                                 id turpis. Nulla odio orci.</p>
-                            <a href="#" class="btn">Download</a>
+                            <a href="#" class="btn bg-primary btn-warning">Download</a>
                         </div>
                     </div>
                 </div>
@@ -116,8 +145,8 @@
                         <p>overleefd maar is ook, vrijwel onveranderd, overgenomen in elektronische zetting. Het is in
                             de jaren '60 populair geworden met de introductie vanlad Letraset velle met Lorem Ipsum
                             passages.</p>
-                        <a class="hero-btn video-popup" href="https://www.youtube.com/watch?v=fkoEj95puX0"><i
-                                class="icofont icofont-play-alt-2"></i> Watch Our Video</a>
+                        <a class="hero-btn video-popup" href="#"><i class="icofont icofont-play-alt-2"></i> Watch Our
+                            Video</a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -285,36 +314,38 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <div class="team-single">
+                    <div class="card">
                         <img class="img-fluid" src="img/1.jpg" alt="" />
-                        <div class="team-overlay text-center">
+                        <div class="card-img-overlay text-center">
                             <h5>Sathi Bhuiyan</h5>
                             <h6>Lovely Designer</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="team-single">
+                    <div class="card">
                         <img class="img-fluid" src="img/2.jpg" alt="" />
-                        <div class="team-overlay text-center">
+                        <div class="card-img-overlay text-center">
                             <h5>Kausar Al Mamun</h5>
                             <h6>Lovely Designer</h6>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="team-single">
+                    <div class="card">
                         <img class="img-fluid" src="img/3.jpg" alt="" />
-                        <div class="team-overlay text-center">
-                            <h5>Nirob Khan</h5>
-                            <h6>Lovely Designer</h6>
-                        </div>
+                        <a href="#!">
+                            <div class="card-img-overlay text-center" id="card-overlay" >
+                                <h5>Nirob Khan</h5>
+                                <h6>Lovely Designer</h6>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <div class="team-single">
-                        <img class="img-fluid" src="img/4.jpg" alt="" />
-                        <div class="team-overlay text-center">
+                    <div class="card">
+                        <img class="card-img-top" src="img/4.jpg" alt="" />
+                        <div class="card-img-overlay text-center">
                             <h5>Salim Rana</h5>
                             <h6>Lovely Designer</h6>
                         </div>
@@ -361,41 +392,41 @@
             <!-- Contact Form -->
             <div class="col-6" ">
                 <form>
-                    <div class="form-group row" style="padding: 0.7rem;">
-                      <label for="name" class="col-sm-2 col-form-label">Name:</label>
-                      <div class="col-sm">
-                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
-                      </div>
-                    </div>
-                    <div class="form-group row" style="padding: 0.7rem;">
-                      <label for="email" class="col-sm-2 col-form-label">Email:</label>
-                      <div class="col-sm">
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
-                      </div>
-                    </div>
-                    <div class="form-group row" style="padding: 0.7rem;">
-                      <label for="message" class="col-sm-2 col-form-label">Message:</label>
-                      <div class="col-sm">
-                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
-                      </div>
-                    </div>
-                    <div class="form-group row" style="padding: 0.7rem;">
-                      <div class="col-sm offset-sm-2">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </div>
-                    </div>
-                  </form>
+                    <div class=" form-group row" style="padding: 0.7rem;">
+                <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
             </div>
-            
-            <!-- Google Map -->
-            <div class="col">
-                <iframe class="col"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1613802584124!5m2!1sen!2sbd"
-                    allowfullscreen="" loading="lazy" width="100%" height="400">
-                </iframe>
+            <div class="form-group row" style="padding: 0.7rem;">
+                <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                <div class="col-sm">
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
             </div>
-
+            <div class="form-group row" style="padding: 0.7rem;">
+                <label for="message" class="col-sm-2 col-form-label">Message:</label>
+                <div class="col-sm">
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+            </div>
+            <div class="form-group row" style="padding: 0.7rem;">
+                <div class="col-sm offset-sm-2">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+            </form>
         </div>
+
+        <!-- Google Map -->
+        <div class="col">
+            <iframe class="col"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1613802584124!5m2!1sen!2sbd"
+                allowfullscreen="" loading="lazy" width="100%" height="400">
+            </iframe>
+        </div>
+
+    </div>
     </div>
     <!-- Copyright Area Start -->
     <div class="ptb-70" style="background-color: #FF5F6C;">
@@ -406,7 +437,7 @@
             </div>
         </div>
     </div>
-   
+
 </body>
 
 </html>
